@@ -1,0 +1,26 @@
+#Lists in python are mostly similar than arrays in JavaScript
+list = ["apple", " Mango", "banana"]
+print(type(list), list[0]) #type of a list , and assing value at the index 0
+
+# Lists are mutable___ means we can chnage or add a new element in the list 
+# changing value in the list using index
+mutated = list[0] = "Strawberry" 
+print(mutated, list) #it will not genrate the new list after changing it upddates the orignal lists
+
+
+#------Lists methods-----
+# ____.append()_____it adds new element at the ends of the list
+
+list.append('Mango')
+print(list)
+
+#_____.sort____ it sort list by default in acceending order, there are sorting so many algorithms to sort 
+list1 = [0, 1,100, 234, 44,66,1000, 0.45, 1.94]
+newlist = list1.sort() # not generate a new list it will produce "none"
+print(newlist, list1)
+list1.sort(reverse= True)# it will sort the list into descending order
+print(list1)
+
+#sorting is also possible when the list's elements are strings
+list.sort(reverse=True)
+print(list)
